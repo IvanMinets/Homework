@@ -1,0 +1,38 @@
+.message {
+
+}
+
+.imageAndText {
+
+}
+
+.imageAndText img {
+    width: 50px;
+    margin-left: 90%;
+    margin-top: 10%;
+}
+
+.text {
+    margin-left: 80%;
+    background-color: blue;
+    color: white;
+}
+
+.text:after {
+
+}
+
+.name {
+    margin-left: 70%;
+
+}
+
+.messageText {
+
+}
+
+.time {
+    margin-left: 80%;
+    background-color: blue;
+    color: white;
+}

@@ -1,0 +1,40 @@
+.friendMessage {
+
+}
+
+.friendImageAndText {
+
+}
+
+.friendImageAndText img {
+    width: 50px;
+}
+
+.friendText {
+
+}
+
+.friendText:after {
+
+}
+
+.friendName {
+    padding-left: 10%;
+    margin-right: 85%;
+    background-color: blue;
+    color: white;
+}
+
+.friendMessageText {
+    padding-left: 10%;
+    margin-right: 85%;
+    background-color: blue;
+    color: white;
+}
+
+.friendTime {
+    padding-left: 10%;
+    margin-right: 85%;
+    background-color: blue;
+    color: white;
+}
