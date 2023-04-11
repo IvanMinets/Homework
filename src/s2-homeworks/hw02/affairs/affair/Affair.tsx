@@ -1,5 +1,5 @@
 import React from 'react'
-import {AffairType, deleteAffair} from '../../HW2'
+import {AffairType} from '../../HW2'
 import s from './Affair.module.css'
 import s2 from '../Affairs.module.css'
 
@@ -11,7 +11,7 @@ type AffairPropsType = {
 
 function Affair(props: AffairPropsType) {
     const deleteCallback = () => {
-
+        props.deleteAffairCallback(props.affair._id)
         // need to fix
     }
 
@@ -36,7 +36,7 @@ function Affair(props: AffairPropsType) {
             <button
                 id={'hw2-button-delete-' + props.affair._id}
                 className={buttonClass}
-                onClick={ ()=> {} }
+                onClick={ ()=> {deleteCallback()} }
                 // need to fix
             >
                 {/*текст кнопки могут изменить студенты*/}
