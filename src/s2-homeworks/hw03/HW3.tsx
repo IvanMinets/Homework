@@ -5,9 +5,9 @@ import GreetingContainer from './GreetingContainer'
 
 /*
 * 1 - описать тип UserType done
-* 2 - указать нужный тип в useState с users
-* 3 - дописать типы и логику функции pureAddUserCallback и проверить её тестами
-* 4 - в файле GreetingContainer.tsx дописать типизацию пропсов
+* 2 - указать нужный тип в useState с users done
+* 3 - дописать типы и логику функции pureAddUserCallback и проверить её тестами done
+* 4 - в файле GreetingContainer.tsx дописать типизацию пропсов done
 * 5 - в файле GreetingContainer.tsx указать нужные типы в useState с name и error
 * 6 - в файле GreetingContainer.tsx дописать тип и логику функции setNameCallback
 * 7 - в файле GreetingContainer.tsx дописать логику функций pureAddUser, pureOnBlur, pureOnEnter и проверить их тестами
@@ -24,7 +24,7 @@ export type UserType = {
 }
 
 export const pureAddUserCallback = (name: string, setUsers: any, users: Array<UserType>) => { // need to fix any
-    const user = {_id: v1(), name: "Ivan"}
+    const user = {_id: v1(), name: 'name'}
     setUsers([...users, user])
 }
 
