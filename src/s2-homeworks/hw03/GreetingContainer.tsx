@@ -18,7 +18,7 @@ export const pureOnEnter = (e: any, addUser: any) => { // если нажата 
 }
 
 // более простой и понятный для новичков
-// function GreetingContainer(props: GreetingPropsType) {
+//function GreetingContainer(props: GreetingContainerPropsType) {
 
 // более современный и удобный для про :)
 const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
@@ -26,8 +26,8 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     addUserCallback,
 }) => {
     // деструктуризация пропсов
-    const [name, setName] = useState<any>('') // need to fix any
-    const [error, setError] = useState<any>('') // need to fix any
+    const [name, setName] = useState<string>('') // need to fix any
+    const [error, setError] = useState<string>('') // need to fix any
 
     const setNameCallback = (e: any) => { // need to fix any
         setName('some name') // need to fix
