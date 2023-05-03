@@ -1,13 +1,16 @@
 .sidebar {
+
 }
 
 .sidebar.open {
+
 }
 
 .background {
 }
 
 .nav {
+    text-decoration: none;
 }
 
 .nav a {
@@ -17,8 +20,12 @@
 }
 
 .nav a.active {
+    text-decoration: none;
+    color: blue;
 }
+
 .close {
+
 }
 
 .close img {
