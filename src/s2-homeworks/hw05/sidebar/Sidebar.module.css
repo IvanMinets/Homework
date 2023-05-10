@@ -1,24 +1,32 @@
 .sidebar {
+
 }
 
 .sidebar.open {
+
 }
 
 .background {
 }
 
 .nav {
+    text-decoration: none;
 }
 
 .nav a {
 }
 
 .nav a:hover {
+
 }
 
 .nav a.active {
+    text-decoration: underline;
+    color: blue;
 }
+
 .close {
+
 }
 
 .close img {
