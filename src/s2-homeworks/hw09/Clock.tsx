@@ -22,7 +22,6 @@ function Clock() {
         }
     }
 
-
     const stop = () => {
         // пишут студенты // поставить часы на паузу, обнулить ид таймера (timerId <- undefined)
         if (isRunning) {
