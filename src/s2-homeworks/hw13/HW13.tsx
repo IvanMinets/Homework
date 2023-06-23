@@ -39,10 +39,16 @@ const HW13 = () => {
                 // дописать
 
             })
-            .catch((e) => {
-                // дописать
-
-            })
+            // .catch((e) => {
+            //     // дописать
+            //     setCode('Код 400!')
+            //     setImage(error400)
+            // })
+            // .finally(() => {
+            //     // дописать
+            //     setCode('Код 500!')
+            //     setImage(error500)
+            // })
     }
 
     return (
