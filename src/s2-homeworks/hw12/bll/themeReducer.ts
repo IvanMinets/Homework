@@ -11,8 +11,7 @@ const initState: themeReducerType = {
     themeId: 1,
 }
 
-export const themeReducer = (state = initState, action: ActionType): any => {
-    debugger// fix any
+export const themeReducer = (state = initState, action: ActionType): any => {// fix any
     switch (action.type) {
         // дописать
         case 'SET_THEME_ID':

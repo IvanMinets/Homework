@@ -8,6 +8,7 @@ import error400 from './images/400.svg'
 import error500 from './images/500.svg'
 import errorUnknown from './images/error.svg'
 import {resolve} from "dns/promises";
+import {rejects} from "assert";
 
 /*
 * 1 - дописать функцию send
@@ -34,13 +35,28 @@ const HW13 = () => {
             .then((res) => {
                 setCode('Код 200!')
                 setImage(success200)
-                set
+                setText('...всё ок ' +
+                    'код 200 - обычно означает что скорее всего всё ок')
                 // дописать
             })
             .catch((e) => {
+                if (x === false) {
+                    setCode('Ошибка 400!')
+                    setImage(error400)
+                    setText('Ты не отправил success в body вообще! ' +
+                        'ошибка 400 - обычно означает что скорее всего фронт отправил что-то не так на бэк!')
+                } else if (x === undefined) {
+                    setCode('Ошибка 500!')
+                    setImage(error500)
+                    setText('эмитация ошибки на сервере ' +
+                        'ошибка 500 - обычно означает что что-то сломалось на сервере, например база данных')
+                } else {
+                    setCode('Error!')
+                    setImage(errorUnknown)
+                    setText('Network Error ' +
+                        'AxiosError')
+                }
                 // дописать
-                setCode('Код 400!')
-                setImage(error400)
             })
 
     }
@@ -56,7 +72,6 @@ const HW13 = () => {
                         onClick={send(true)}
                         xType={'secondary'}
                         // дописать
-
                     >
                         Send true
                     </SuperButton>
