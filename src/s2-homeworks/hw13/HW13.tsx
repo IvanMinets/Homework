@@ -7,6 +7,7 @@ import success200 from './images/200.svg'
 import error400 from './images/400.svg'
 import error500 from './images/500.svg'
 import errorUnknown from './images/error.svg'
+import {resolve} from "dns/promises";
 
 /*
 * 1 - дописать функцию send
@@ -21,10 +22,7 @@ const HW13 = () => {
     const [image, setImage] = useState('')
 
     const send = (x?: boolean | null) => () => {
-        const url =
-            x === null
-                ? 'https://xxxxxx.ccc' // имитация запроса на не корректный адрес
-                : 'https://incubator-personal-page-back.herokuapp.com/api/3.0/homework/test'
+        const url = x === null ? 'https://xxxxxx.ccc' : 'https://samurai.it-incubator.io/api/3.0/homework/test'
 
         setCode('')
         setImage('')
@@ -36,19 +34,15 @@ const HW13 = () => {
             .then((res) => {
                 setCode('Код 200!')
                 setImage(success200)
+                set
                 // дописать
-
             })
-            // .catch((e) => {
-            //     // дописать
-            //     setCode('Код 400!')
-            //     setImage(error400)
-            // })
-            // .finally(() => {
-            //     // дописать
-            //     setCode('Код 500!')
-            //     setImage(error500)
-            // })
+            .catch((e) => {
+                // дописать
+                setCode('Код 400!')
+                setImage(error400)
+            })
+
     }
 
     return (
