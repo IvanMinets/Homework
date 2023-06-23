@@ -38,27 +38,24 @@ const HW13 = () => {
                 setCode('Код 200!')
                 setImage(success200)
                 setText('...всё ок)')
-                setInfo('')
+                setInfo('код 200 - обычно означает что скорее всего всё ок)')
             })
             .catch((e) => {
                 if (x === false) {
                     setCode('500')
                     setImage(error400)
-                    setText('Ты не отправил success в body вообще! ' +
-                        'ошибка 400 - обычно означает что скорее всего фронт отправил что-то не так на бэк!')
-                    setInfo('')
+                    setText('эмитация ошибки на сервере')
+                    setInfo('ошибка 400 - обычно означает что скорее всего фронт отправил что-то не так на бэк!')
                 } else if (x === undefined) {
                     setCode('400')
                     setImage(error500)
-                    setText('эмитация ошибки на сервере ' +
-                        'ошибка 500 - обычно означает что что-то сломалось на сервере, например база данных')
-                    setInfo('')
+                    setText('Ты не отправил success в body вообще!')
+                    setInfo('ошибка 500 - обычно означает что что-то сломалось на сервере, например база данных')
                 } else {
                     setCode('Error!')
                     setImage(errorUnknown)
-                    setText('Network Error ' +
-                        'AxiosError')
-                    setInfo('Error')
+                    setText('Network Error')
+                    setInfo('AxiosError')
                 }
             })
             .finally(()=>{setIsLoading(false)})
