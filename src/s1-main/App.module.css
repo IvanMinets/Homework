@@ -3,7 +3,7 @@
 }
 
 .hw {
-
+    border-top: 1px solid black;
 }
 
 .hwTitle {
@@ -15,4 +15,23 @@
     font-weight: 600;
     font-size: 22px;
     line-height: 27px;
+
+}
+.text {;
+    margin-left: 5%;
+    font-family: 'Montserrat', sans-serif;
+    size: 14px;
+    colo: #000000;
+}
+.text2 {
+    margin-left: 5%;
+    font-family: 'Montserrat', sans-serif;
+    size: 14px;
+    color: #FFFFFF
+}
+.text3 {
+    margin-left: 5%;
+    font-family: 'Montserrat', sans-serif;
+    size: 14px;
+    colo: #000000;
 }

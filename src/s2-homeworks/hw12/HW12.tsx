@@ -13,9 +13,9 @@ import {changeThemeId, themeReducerType} from './bll/themeReducer'
 * */
 
 const themes = [
-    {id: 1, value: 'light'},
-    {id: 2, value: 'blue'},
-    {id: 3, value: 'dark'},
+    {id: 1, value: 'Light'},
+    {id: 2, value: 'Blue'},
+    {id: 3, value: 'Dark'},
 ]
 
 const HW12 = () => {
@@ -23,7 +23,7 @@ const HW12 = () => {
     const themeId = useSelector<any>(state => state.theme.themeId)
     const dispatch = useDispatch();
 
-    const change = (id: any) => { // дописать функцию
+    const change = (id: number) => { // дописать функцию
         dispatch(changeThemeId(id))
     }
 
@@ -38,6 +38,8 @@ const HW12 = () => {
             </div>
 
             <div className={s2.hw}>
+                {themeId !== 2  && <div className={themeId === 1 ? s2.text : s2.text2}>Выберите тему</div>}
+                {themeId === 2 && <div className={s2.text3}>Выберите тему</div>}
                 <SuperSelect
                     id={'hw12-select-theme'}
                     className={s.select}
