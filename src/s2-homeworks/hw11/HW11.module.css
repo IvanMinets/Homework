@@ -2,7 +2,16 @@
 }
 
 .wrapper {
+    width: 200px;
+    height: 200px;
+
+}
+.wrapper .span{
+    padding: 20px;
 }
 
 .number {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
 }
